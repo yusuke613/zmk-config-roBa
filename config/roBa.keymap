@@ -84,7 +84,7 @@
 &kp LCTRL         &kp LEFT_ALT  &kp RG(LEFT_COMMAND)  &lt_to_layer_0 6 LA(SPACE)  &lt 2 SPACE  &lt_to_layer_0 3 LG(SPACE)      &kp BACKSPACE  &lt 1 ENTER                               &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SYMBPLS {
