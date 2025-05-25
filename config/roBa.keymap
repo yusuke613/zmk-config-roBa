@@ -79,7 +79,7 @@
         SYMBPLS {
             bindings = <
 &trans     &kp AMPERSAND    &kp ASTRK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp F4            &kp BACKSLASH
-&kp TILDE  &kp DOLLAR       &kp PERCENT  &kp LCTRL             &trans                 &kp LC(LG(NUMBER_4))          &kp LG(LC(N5))      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON      &kp F9            &kp COLON
+&kp TILDE  &kp DOLLAR       &kp PERCENT  &kp LCTRL             &trans                 &kp LS(LG(NUMBER_4))          &kp LG(LS(N5))      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON      &kp F9            &kp COLON
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND             &trans                 &kp LC(LG(LS(NUMBER_4)))      &kp LG(LC(LS(N5)))  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
 &trans     &trans           &trans       &trans                &trans                 &trans                        &trans              &trans                                                                        &trans
             >;
