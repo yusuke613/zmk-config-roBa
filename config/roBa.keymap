@@ -42,7 +42,9 @@
             key-positions = <24 25>;
         };
     };
+
     // 追加：マウスクリックンを入力し、一定時間マウスレイヤーを保持するが、その後、デフォルトレイヤーに自動的に切り替える
+
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
@@ -51,7 +53,7 @@
             label = "TO_LAYER_0";
         };
 
-        mkp_exit_AML: mkp_exit_AML{
+        mkp_exit_AML: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -62,6 +64,7 @@
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&sl 4>;
+
             label = "MKP_EXIT_AML";
         };
     };
@@ -132,10 +135,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q             &to_layer_0 W         &to_layer_0 E             &to_layer_0 R          &to_layer_0 T                                                        &to_layer_0 Y      &to_layer_0 U  &kp LC(UP_ARROW)  &to_layer_0 O       &to_layer_0 P
-&to_layer_0 A             &to_layer_0 S         &to_layer_0 D             &to_layer_0 F          &to_layer_0 G      &to_layer_0 ESC            &kp LG(V)              &kp LC(LS(TAB))    &mkp MB1       &mkp MB3          &mkp MB2            &kp LC(TAB)
-&mt LEFT_SHIFT Z          &to_layer_0 X         &to_layer_0 C             &to_layer_0 V          &to_layer_0 B      &to_layer_0 TAB            &kp LG(C)              &to_layer_0 N      &to_layer_0 M  &kp LG(W)         &to_layer_0 PERIOD  &to_layer_0 SLASH
-&to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LEFT_COMMAND  &to_layer_0 LA(SPACE)  &to_layer_0 SPACE  &to_layer_0 LG(SPACE)      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                       &to_layer_0 DELETE
+&to_layer_0 Q             &to_layer_0 W         &to_layer_0 E             &to_layer_0 R          &to_layer_0 T                                                        &to_layer_0 Y      &to_layer_0 U      &kp LC(UP_ARROW)   &to_layer_0 O      &to_layer_0 P
+&to_layer_0 A             &to_layer_0 S         &to_layer_0 D             &to_layer_0 F          &to_layer_0 G      &to_layer_0 ESC            &kp LG(V)              &kp LC(LS(TAB))    &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &kp LC(TAB)
+&mt LEFT_SHIFT Z          &to_layer_0 X         &to_layer_0 C             &to_layer_0 V          &to_layer_0 B      &to_layer_0 TAB            &kp LG(C)              &to_layer_0 N      &mkp MB4           &kp LG(W)          &mkp MB5           &to_layer_0 SLASH
+&to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LEFT_COMMAND  &to_layer_0 LA(SPACE)  &to_layer_0 SPACE  &to_layer_0 LG(SPACE)      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                           &to_layer_0 DELETE
             >;
         };
 
