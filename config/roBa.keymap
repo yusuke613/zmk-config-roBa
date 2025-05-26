@@ -54,8 +54,9 @@
         };
 
         to_layer_5: to_layer_5 {
-            compatible = "zmk,behavior-macro";
-            bindings = <&to 5>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 5 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_5";
         };
 
