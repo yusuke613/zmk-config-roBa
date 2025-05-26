@@ -53,6 +53,12 @@
             label = "TO_LAYER_0";
         };
 
+        to_layer_5: to_layer_5 {
+            compatible = "zmk,behavior-macro";
+            bindings = <&to 5>;
+            label = "TO_LAYER_5";
+        };
+
         mkp_exit_AML: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
