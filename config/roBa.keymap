@@ -125,7 +125,7 @@
 &kp MINUS                   &kp N7        &kp N8            &kp N9        &kp PLUS                                         &trans               &kp F7  &kp F8  &kp F9  &kp F10
 &kp SLASH                   &kp NUMBER_4  &kp N5            &kp NUMBER_6  &kp ASTERISK  &kp EQUAL      &kp MINUS           &trans               &kp F4  &kp F5  &kp F6  &kp F11
 &mt LEFT_SHIFT KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp PERIOD    &kp TAB        &kp ESC             &trans               &kp F1  &kp F2  &kp F3  &kp F12
-&kp LEFT_CONTROL            &kp LEFT_ALT  &kp LEFT_COMMAND  &trans        &trans        &trans         &kp LC(LEFT_ARROW)  &kt LC(RIGHT_ARROW)                          &kp F13
+&kp LEFT_CONTROL            &kp LEFT_ALT  &kp LEFT_COMMAND  &trans        &trans        &trans         &kp LC(LEFT_ARROW)  &kt LC(RIGHT_ARROW)                          &kp GLOBE
             >;
         };
 
@@ -144,7 +144,7 @@
             bindings = <
 &to_layer_0 Q             &to_layer_0 W         &to_layer_0 E             &to_layer_0 R          &to_layer_0 T                                                        &to_layer_0 Y      &to_layer_0 U      &kp LC(UP_ARROW)  &to_layer_0 O      &to_layer_0 P
 &to_layer_0 A             &to_layer_0 S         &to_layer_0 D             &to_layer_0 F          &to_layer_0 G      &to_layer_0 EQUAL          &kp LG(V)              &kp LC(LS(TAB))    &mkp_exit_AML MB1  &lt 5 LG(T)       &mkp_exit_AML MB2  &kp LC(TAB)
-&mt LEFT_SHIFT Z          &to_layer_0 X         &to_layer_0 C             &to_layer_0 V          &to_layer_0 B      &to_layer_0 TAB            &kp LG(C)              &to_layer_0 N      &mkp MB4           &kp LG(W)         &mkp MB5           &to_layer_0 SLASH
+&kp LEFT_SHIFT            &to_layer_0 X         &to_layer_0 C             &to_layer_0 V          &to_layer_0 B      &to_layer_0 TAB            &kp LG(C)              &to_layer_0 N      &mkp MB4           &kp LG(W)         &mkp MB5           &to_layer_0 SLASH
 &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LEFT_COMMAND  &to_layer_0 LA(SPACE)  &to_layer_0 SPACE  &to_layer_0 LG(SPACE)      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                          &tog 5
             >;
         };
