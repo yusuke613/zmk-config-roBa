@@ -131,10 +131,10 @@
 
         ARROW {
             bindings = <
-&kp LA(LC(LG(LEFT_ARROW)))  &kp LC(LS(TAB))         &kp UP_ARROW      &kp LC(TAB)              &kp LA(LC(LG(RIGHT_ARROW)))                             &kp LC(LA(LG(LEFT_ARROW)))  &kp LS(TAB)             &kp LC(LA(LG(UP_ARROW)))  &kp TAB                  &kp LC(LA(LG(RIGHT_ARROW)))
-&kp HOME                    &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &kp END                      &trans      &trans         &kp HOME                    &kp LC(LEFT_ARROW)      &kp LC(LA(LG(DOWN)))      &kp LC(RIGHT_ARROW)      &kp END
-&kp LEFT_SHIFT              &kp LG(LS(LEFT_ARROW))  &trans            &kp LG(LS(RIGHT_ARROW))  &trans                       &trans      &trans         &trans                      &kp LG(LS(LEFT_ARROW))  &trans                    &kp LG(LS(RIGHT_ARROW))  &trans
-&kp LEFT_CONTROL            &kp LEFT_ALT            &kp LEFT_COMMAND  &trans                   &trans                       &trans      &kp C_BRI_DEC  &kp C_BRI_INC                                                                                          &trans
+&kp LA(LC(LG(LEFT_ARROW)))  &kp LC(LS(TAB))         &kp UP_ARROW      &kp LC(TAB)              &kp LA(LC(LG(RIGHT_ARROW)))                             &trans         &kp LG(LA(LC(LEFT_ARROW)))  &kp LC(LA(LG(UP_ARROW)))  &kp LG(LA(LC(RIGHT_ARROW)))  &trans
+&kp HOME                    &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &kp END                      &trans      &trans         &trans         &kp LC(LEFT_ARROW)          &kp LC(LA(LG(DOWN)))      &kp LC(RIGHT_ARROW)          &trans
+&kp LEFT_SHIFT              &kp LG(LS(LEFT_ARROW))  &trans            &kp LG(LS(RIGHT_ARROW))  &trans                       &trans      &trans         &trans         &kp LG(LS(TAB))             &trans                    &kp LG(TAB)                  &trans
+&kp LEFT_CONTROL            &kp LEFT_ALT            &kp LEFT_COMMAND  &trans                   &trans                       &trans      &kp C_BRI_DEC  &kp C_BRI_INC                                                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
