@@ -43,11 +43,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -63,7 +65,7 @@
 &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LEFT_COMMAND  &lt 2 SPACE  &lt_to_layer_0 3 GLOBE      &kp BACKSPACE  &lt 4 ENTER                             &lt 6 DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer_6 {
@@ -73,6 +75,8 @@
 &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans  &trans      &bootloader         &trans               &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans            &trans            &trans            &trans  &trans      &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                                            &bt BT_CLR_ALL
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM {
@@ -82,6 +86,8 @@
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL      &trans        &trans         &kp EXCL       &kp AT     &kp HASH   &kp PLUS
 &kp LEFT_SHIFT              &kp LEFT_CONTROL  &kp LEFT_ALT     &trans           &trans        &trans         &kp LC(LEFT)  &kp LA(RIGHT)                                       &kp PIPE
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
@@ -92,7 +98,7 @@
 &kp LEFT_SHIFT  &trans                  &trans          &trans                   &trans   &trans      &trans  &kp BACKSPACE                                                                                       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
@@ -102,6 +108,8 @@
 &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
@@ -111,6 +119,8 @@
 &to_layer_0 Z           &to_layer_0 X             &to_layer_0 C         &to_layer_0 V             &to_layer_0 B      &to_layer_0 TAB        &to_layer_0 ESCAPE     &to_layer_0 N      &kp LG(Z)      &kp LG(LS(T))     &kp LG(RIGHT_ARROW)  &to_layer_0 SLASH
 &to_layer_0 LEFT_SHIFT  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LEFT_COMMAND  &to_layer_0 SPACE  &to_layer_0 GLOBE      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                        &to_layer_0 DELETE
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
@@ -120,15 +130,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
-        };
 
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
