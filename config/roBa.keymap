@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800
 
 &mt {
     flavor = "balanced";
