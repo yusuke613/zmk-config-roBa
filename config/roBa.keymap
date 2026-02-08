@@ -114,8 +114,6 @@
 &to_layer_0 Z           &to_layer_0 X             &to_layer_0 C         &to_layer_0 V             &to_layer_0 B      &to_layer_0 TAB        &to_layer_0 ESCAPE     &to_layer_0 N      &kp LG(Z)      &kp LG(LS(T))     &kp LG(RIGHT_ARROW)  &to_layer_0 SLASH
 &to_layer_0 LEFT_SHIFT  &to_layer_0 LEFT_CONTROL  &to_layer_0 LEFT_ALT  &to_layer_0 LEFT_COMMAND  &to_layer_0 SPACE  &to_layer_0 GLOBE      &to_layer_0 BACKSPACE  &to_layer_0 ENTER                                                        &to_layer_0 DELETE
             >;
-
-            sensor-bindings = <&none>;
         };
 
         SCROLL {
