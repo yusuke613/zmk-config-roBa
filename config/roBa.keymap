@@ -139,10 +139,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q           &to_layer_0 W               &kp LG(LA(LC(UP_ARROW)))    &to_layer_0 R                &to_layer_0 T                                                &to_layer_0 Y           &kp LC(LS(TAB))     &kp LC(UP_ARROW)  &kp LC(TAB)          &to_layer_0 P
-&to_layer_0 A           &kp LC(LA(LG(LEFT_ARROW)))  &kp LC(LA(LG(DOWN_ARROW)))  &kp LC(LA(LG(RIGHT_ARROW)))  &to_layer_0 G  &to_layer_0 EQUAL      &to_layer_0 MINUS      &to_layer_0 H           &mkp MB1            &kp LG(T)         &mkp MB2             &to_layer_0 SEMI
-&to_layer_0 Z           &to_layer_0 X               &to_layer_0 C               &to_layer_0 V                &to_layer_0 B  &to_layer_0 TAB        &to_layer_0 ESCAPE     &to_layer_0 N           &kp LG(LEFT_ARROW)  &kp LG(W)         &kp LG(RIGHT_ARROW)  &to_layer_0 SLASH
-&to_layer_0 LEFT_SHIFT  &to_layer_0 LEFT_CONTROL    &to_layer_0 LEFT_ALT        &to_layer_0 LEFT_COMMAND     &lt 1 SPACE    &lt 2 LG(SPACE)        &to_layer_0 BACKSPACE  &lt_to_layer_0 3 ENTER                                                             &lt 4 DELETE
+&to_layer_0 Q           &to_layer_0 W               &kp LG(LA(LC(UP_ARROW)))    &to_layer_0 R                &to_layer_0 T                                                              &to_layer_0 Y           &kp LC(LS(TAB))     &kp LC(UP_ARROW)  &kp LC(TAB)          &to_layer_0 P
+&to_layer_0 A           &kp LC(LA(LG(LEFT_ARROW)))  &kp LC(LA(LG(DOWN_ARROW)))  &kp LC(LA(LG(RIGHT_ARROW)))  &to_layer_0 G           &to_layer_0 EQUAL           &to_layer_0 MINUS      &to_layer_0 H           &mkp MB1            &kp LG(T)         &mkp MB2             &to_layer_0 SEMI
+&to_layer_0 Z           &to_layer_0 X               &to_layer_0 C               &to_layer_0 V                &to_layer_0 B           &to_layer_0 TAB             &to_layer_0 ESCAPE     &to_layer_0 N           &kp LG(LEFT_ARROW)  &kp LG(W)         &kp LG(RIGHT_ARROW)  &to_layer_0 SLASH
+&to_layer_0 LEFT_SHIFT  &to_layer_0 LEFT_CONTROL    &to_layer_0 LEFT_ALT        &to_layer_0 LEFT_COMMAND     &to_layer_0 LANGUAGE_2  &to_layer_0 LANGUAGE_1      &to_layer_0 BACKSPACE  &lt_to_layer_0 3 ENTER                                                             &lt 4 DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
