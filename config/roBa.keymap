@@ -19,9 +19,19 @@
     combos {
         compatible = "zmk,combos";
 
+        single_quotation {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <20 21>;
+        };
+
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+            key-positions = <20 21 34>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <11 10>;
         };
     };
 
