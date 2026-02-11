@@ -106,10 +106,10 @@
 
         ARROW {
             bindings = <
-&trans          &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans         &trans                      &kp LG(LA(LC(UP_ARROW)))    &trans                       &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans         &kp LC(LA(LG(LEFT_ARROW)))  &kp LC(LA(LG(DOWN_ARROW)))  &kp LC(LA(LG(RIGHT_ARROW)))  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans         &trans                      &trans                      &trans                       &trans
-&kp LEFT_SHIFT  &trans                  &trans          &trans                   &trans   &trans      &trans  &kp BACKSPACE                                                                                       &trans
+&trans          &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans           &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans           &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
+&kp LEFT_SHIFT  &trans                  &trans          &trans                   &trans   &trans      &kp LG(LS(TAB))  &kp LG(TAB)                                                       &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -139,10 +139,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q           &to_layer_0 W                       &to_layer_0 LG(LA(LC(UP_ARROW)))    &to_layer_0 R                        &to_layer_0 T                                                                  &to_layer_0 Y           &to_layer_0 U       &kp LC(UP_ARROW)  &kp O                &to_layer_0 P
-&to_layer_0 A           &to_layer_0 LC(LA(LG(LEFT_ARROW)))  &to_layer_0 LC(LA(LG(DOWN_ARROW)))  &to_layer_0 LC(LA(LG(RIGHT_ARROW)))  &to_layer_0 G           &to_layer_0 EQUAL               &to_layer_0 MINUS      &to_layer_0 H           &mkp MB1            &kp LG(T)         &mkp MB2             &to_layer_0 SEMI
-&to_layer_0 Z           &to_layer_0 X                       &to_layer_0 C                       &to_layer_0 V                        &to_layer_0 B           &to_layer_0 TAB                 &to_layer_0 ESCAPE     &to_layer_0 N           &kp LG(LEFT_ARROW)  &kp LG(W)         &kp LG(RIGHT_ARROW)  &to_layer_0 SLASH
-&to_layer_0 LEFT_SHIFT  &to_layer_0 LEFT_CONTROL            &to_layer_0 LEFT_ALT                &to_layer_0 LEFT_COMMAND             &lt_to_layer_0 1 SPACE  &lt_to_layer_0 2 LG(SPACE)      &to_layer_0 BACKSPACE  &lt_to_layer_0 3 ENTER                                                             &to_layer_0 DELETE
+&to_layer_0 Q           &to_layer_0 W               &kp LG(LA(LC(UP_ARROW)))    &to_layer_0 R                &to_layer_0 T                                                &to_layer_0 Y           &kp LC(LS(TAB))     &kp LC(UP_ARROW)  &kp LC(TAB)          &to_layer_0 P
+&to_layer_0 A           &kp LC(LA(LG(LEFT_ARROW)))  &kp LC(LA(LG(DOWN_ARROW)))  &kp LC(LA(LG(RIGHT_ARROW)))  &to_layer_0 G  &to_layer_0 EQUAL      &to_layer_0 MINUS      &to_layer_0 H           &mkp MB1            &kp LG(T)         &mkp MB2             &to_layer_0 SEMI
+&to_layer_0 Z           &to_layer_0 X               &to_layer_0 C               &to_layer_0 V                &to_layer_0 B  &to_layer_0 TAB        &to_layer_0 ESCAPE     &to_layer_0 N           &kp LG(LEFT_ARROW)  &kp LG(W)         &kp LG(RIGHT_ARROW)  &to_layer_0 SLASH
+&to_layer_0 LEFT_SHIFT  &to_layer_0 LEFT_CONTROL    &to_layer_0 LEFT_ALT        &to_layer_0 LEFT_COMMAND     &lt 1 SPACE    &lt 2 LG(SPACE)        &to_layer_0 BACKSPACE  &lt_to_layer_0 3 ENTER                                                             &lt 4 DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
