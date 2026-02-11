@@ -106,10 +106,10 @@
 
         ARROW {
             bindings = <
-&trans          &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                           &trans                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans                      &trans                       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans                      &trans                       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
-&kp LEFT_SHIFT  &trans                  &trans          &trans                   &trans   &trans      &kp LS(LA(LC(LEFT_ARROW)))  &kp LG(LA(LC(RIGHT_ARROW)))                                                       &trans
+&trans          &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans           &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans           &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
+&kp LEFT_SHIFT  &trans                  &trans          &trans                   &trans   &trans      &kp LC(LS(TAB))  &kp LS(TAB)                                                       &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -128,10 +128,10 @@
 
         BLUETOOTH {
             bindings = <
-&trans  &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &trans                                  &bt BT_SEL 0         &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)  &trans  &trans      &trans              &trans               &trans        &trans        &trans        &bt BT_CLR
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans  &trans      &bootloader         &trans               &trans        &trans        &trans        &bt BT_CLR_ALL
-&trans  &trans            &trans            &trans            &trans  &trans      &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                                            &trans
+&trans  &trans                &trans                    &trans      &trans                                  &bt BT_SEL 0         &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP           &kp K_MUTE  &trans  &trans      &trans              &trans               &trans        &trans        &trans        &bt BT_CLR
+&trans  &kp C_BRIGHTNESS_DEC  &kp LG(C_BRIGHTNESS_INC)  &trans      &trans  &trans      &bootloader         &trans               &trans        &trans        &trans        &bt BT_CLR_ALL
+&trans  &trans                &trans                    &trans      &trans  &trans      &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                                            &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
