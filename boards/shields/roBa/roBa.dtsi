@@ -98,7 +98,7 @@
         compatible = "alps,ec11";
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <15>;  // 値を12から15へ変更
+        steps = <30>;  // 値を12から30へ変更
         status = "disabled";
     };
 
