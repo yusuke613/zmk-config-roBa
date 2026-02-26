@@ -95,13 +95,13 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                   &trans               &kp AMPERSAND  &kp TILDE  &kp LPAR   &kp RPAR
-&kp SLASH                   &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp EQUAL      &kp MINUS     &trans               &kp DLLR       &kp PRCNT  &kp CARET  &kp UNDER
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL      &trans        &trans               &kp EXCL       &kp AT     &kp HASH   &kp PLUS
-&kp LEFT_SHIFT              &kp LEFT_CONTROL  &kp LEFT_ALT     &trans           &trans        &trans         &kp LC(LEFT)  &kp LC(RIGHT_ARROW)                                       &kp PIPE
+&trans          &trans            &trans        &trans            &trans                                &trans               &kp N7        &kp N8        &kp N9        &kp N0
+&trans          &trans            &trans        &trans            &trans  &kp LG(N0)      &trans        &trans               &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&kp LEFT_SHIFT  &trans            &trans        &trans            &trans  &trans          &trans        &kp EQUAL            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans  &trans          &kp LC(LEFT)  &kp LC(RIGHT_ARROW)                                            &kp PIPE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         ARROW {
@@ -109,18 +109,18 @@
 &trans          &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans           &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans           &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
-&kp LEFT_SHIFT  &trans                  &trans          &trans                   &trans   &trans      &kp LC(LS(TAB))  &kp LC(TAB)                                                       &trans
+&kp LEFT_SHIFT  &kp LEFT_CONTROL        &kp LEFT_ALT    &kp LEFT_COMMAND         &trans   &trans      &kp LC(LS(TAB))  &kp LC(TAB)                                                       &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp LS(UP_ARROW) LS(DOWN_ARROW)>;
         };
 
         FUNCTION {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &kp F10                         &trans  &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &trans
-&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans         &trans  &trans  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)  &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans         &trans  &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans
-&trans  &trans  &trans  &trans  &trans   &kp GLOBE      &trans  &trans                                                        &trans
+&trans  &kp F7  &kp F8  &kp F9  &kp F10                      &trans  &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &trans
+&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &trans  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans  &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans                                                        &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
